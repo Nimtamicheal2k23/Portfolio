@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <link rel="shortcut icon" href="asset/media/images/tagg.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/358d766f87.js" crossorigin="anonymous"></script>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        html{
+            height: 100%;
+        }
+        body{
+            background-color: blue;
+            height: 100%;
+        }
+        .hero{
+            position: relative;
+            width: 100%;
+            min-height: 100%;
+            
+        }
+        .space{
+            height: 20px;
+        }
+        nav{
+            display: flex;
+            width: 84%;
+            margin: auto;
+            padding:10px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav img{
+            padding-top: 5px;
+            height: 100px;
+        }
+        nav ul li{
+            display: inline-block;
+            list-style: none;
+            margin: 8px 15px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav ul li a:hover{
+            color: red;
+        }
+        .david{
+            margin-left: 8%;
+            margin-top: 9%;
+        }
+        .david h1{
+            font-size: 50px;
+            color: black;
+            margin-bottom: 2px;
+        }
+        .david h3{
+            font-size: 25px;
+        }
+        .david p{
+            color: black;
+            line-height: 20px;
+        }
+        .david a{
+            background-color: black;
+            padding: 10px 18px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            display: inline-block;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+        .david a:hover{
+            color: black;
+            background-color: red;
+        }
+        .david .social-link i{
+            color: white;
+            cursor: pointer;
+            margin: 7px;
+            font-size: 20px;
+        }
+        .david .social-link p{
+            color: white;
+        }
+        .david .social-link i:hover{
+            color: red;
+        }
+        span{
+            color: red;
+        }
+        .images{
+            width: 45%;
+            height: 80%;
+            position: absolute;
+            bottom: 0;
+            right: 100px;
+        }
+        .images img{
+            padding-top: 65px;
+            height: 250px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            transition:bottom 1s, left 1s;
+        }
+        .row{
+            display: flex;
+        }
+        .skills .row .col img{
+            height: 150px;
+            width: 150px;
+            /* padding-left: 15px; */
+        }
+        .skills .row .col p{
+            color: black;
+            font-weight: 100;
+            font-family: cursive;
+            font-size: 30px;
+            padding-left: 45px;
+        }
+        .skills .row .col{
+            width: 30%;
+           padding-left:100px;
+        }
+        #alone{
+            text-align: center;
+            /* font-family: cursive; */
+            font-size: 50px;
+        } 
+        /*==================== SKILLS ====================*/
+.skill_container {
+    row-gap: 0;
+}
+
+.skills_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+}
+
+.skills_icon,
+.skills_arrow {
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.skills_icon {
+    margin-right: var(--mb-0-75);
+}
+
+.skills_title {
+    font-size: var(--h3-font-size);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills_subtitle {
+    font-size: var(--small-font-size);
+    color: var(--subtitle-color);
+}
+
+.skill_arrow {
+    margin-left: auto;
+    transition: .4s;
+}
+
+.skills_list {
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+}
+
+
+
+.skills_titles {
+    display: flex;
+    margin-bottom: var(--mb-0-5);
+    /* padding: 20px; */
+    padding-left: 40px;
+}
+
+.skills_name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: white;
+}
+
+.skills-check {
+    font-size: 2rem;
+    padding-left: 400px;
+}
+
+.skills-check p{
+    padding-left: 400px;
+}
+#red{
+    color: red;
+}
+#green{
+    color: green;
+}
+#yellow{
+    color: yellow;
+}
+
+/* ===============footer============== */
+
+footer{
+    background-color: black;
+    height: 530px;
+    width: 100%;
+}
+footer .row {
+    width: 100%;
+    display: flex;
+}
+footer .row .col1{
+    color: white;
+    padding-left: 150px;
+}
+footer .row .col2{
+    padding-left: 550px;
+    color: white;
+}
+footer .row .col2 i{
+    color: white;
+}
+footer .row .col2 p i:hover{
+    color: white;
+}
+footer .row .col2 i:hover{
+    color: red;
+}
+footer .row  h2{
+    padding-left: 25px;
+}
+footer .row , footer .row  i, footer .row  b {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+}
+footer .row  a:hover, footer .row  i:hover{
+    color: orange;
+}
+footer h4{
+    color: white;
+    text-align: center;
+}
+footer section {
+    text-align: center;
+}
+button{
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+ /*==================== SKILLS ====================*/
+ .skill_container {
+    row-gap: 0;
+}
+
+.skills_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+}
+
+.skills_icon,
+.skills_arrow {
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.skills_icon {
+    margin-right: var(--mb-0-75);
+}
+
+.skills_title {
+    font-size: var(--h3-font-size);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills_subtitle {
+    font-size: var(--small-font-size);
+    color: var(--subtitle-color);
+}
+
+.skill_arrow {
+    margin-left: auto;
+    transition: .4s;
+}
+
+.skills_list {
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+}
+
+.skills_titles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
+}
+
+.skills_name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: white;
+}
+
+.skills-check {
+    font-size: 2rem;
+}
+.space1{
+    height: 30px;
+}
+.slide-pic{
+    width: 300px;
+    padding-left: 30px;
+}
+.about .row{
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+.about .row .col1{
+    width: 50%;
+    padding-left: 20px;
+    color: white;
+}
+.about .row .col2{
+    width: 50%;
+    padding-left: 20px;
+}
+.about .row .col2 img{
+    width: 350px;
+}
+.skills_data{
+    color: black;
+}
+.space1,strong,h1{
+    text-align: center
+}
+@media only screen and (max-width:400px){
+    nav{
+        width: 100%;
+    }
+    nav img{
+        display: none;
+    }
+    .hero nav ul li a{
+        font-size: 12px;
+    }
+    .hero main{
+        display: block;
+        justify-content: center;
+        height: 520px;
+        padding-left: 30px;
+    }
+    .hero main .david {
+        width: 100%;
+    }
+    .hero main .images{
+        width: 100%;
+        padding-top: 40px;
+    }
+    .hero main .images .slide-pic{
+        padding-left: 230px;
+    }
+    .skills.section.border-bottom{
+        width: 100%;
+    }
+    .skills.section.border-bottom #alone{
+        text-align: center;
+        font-size: 20px;
+        padding-left: 220px;
+        padding-bottom: 10px;
+    }
+    .about .row{
+        display: block;
+        width: 100%;
+        height: 470px;
+    }
+    .about .row .col1, .about .row .col2{
+        width: 100%;
+        padding-bottom: 15px;
+        text-align: center;
+        padding-left: 100px;
+    }
+    footer{
+        width: 100%;
+        height: 630px;
+        background:none;
+    }
+    footer .row{
+        width: 100%;
+    }
+    footer .row .col1{
+        padding-left: 90px;
+    }
+    footer .row .col1 h1{
+        font-size: 25px;
+    }
+    footer .row .col1 h3{
+        font-size: 20px;
+    }
+    footer .row .col2{
+        font-size: 11px;
+        padding-left: 15px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="hero" id="portfolio">
+        <div class="space"></div>
+        <nav>
+            <img src="asset/media/image/mic3.jfif" alt="LOGO">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="#david">ABOUT</a></li>
+                <li><a href="#alone">SKILLS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="david" id="david">
+                <h3>I'm Michael <span>Arrah</span>,</h3>
+                <h1><span>W</span>EB <span>D</span>ESIGNER</h1>
+                <p>I am a web designer and developer from Nigeria  
+                    <br>I create websites to do business better online</p>
+                    <a href="#">HIRE ME</a>
+                    
+            </div>
+            <div class="images">
+                <img name="Slide" class="slide-pic">
+    
+            </div>
+        </main>
+        <div class="space1"></div>
+        <div class="space1"></div>
+        
+        
+        
+        
+        
+        <!--==================== SKILLS ====================-->
+        <section class="skills section border-bottom" id="skills">
+            <h1 id="alone">SKI<span>LLS</span></h1>
+    
+            <div class="skills_list grid">
+
+                <div class="skills_data">
+                    <div class="skills_titles">
+                        <h3 class="skills_name">HTML</h3>
+                        <i class="devicon-html5-plain-wordmark colored skills-check"></i>
+                    </div>
+                </div>
+
+                <div class="skills_data">
+                    <div class="skills_titles">
+                        <h3 class="skills_name">CSS</h3>
+                        <i class="devicon-css3-plain-wordmark colored skills-check"></i>
+
+                    </div>
+                </div>
+
+                <div class="skills_data">
+                    <div class="skills_titles">
+                        <h3 class="skills_name">Bootstrap</h3>
+                        <i class="devicon-bootstrap-plain-wordmark colored skills-check"></i>
+                    </div>
+                </div>
+
+                <div class="skills_data">
+                    <div class="skills_titles">
+                        <h3 class="skills_name">Javascript</h3>
+                        <i class="devicon-javascript-plain colored skills-check"></i>
+                    </div>
+                </div>
+
+                <div class="skills_data">
+                    <div class="skills_titles">
+                        <h3 class="skills_name">React</h3>
+                        <i class="devicon-react-original-wordmark colored skills-check"></i>
+                    </div>
+                </div>
+
+                <div class="skills_data">
+                    <div class="skills_titles">
+                        <h3 class="skills_name">Tailwind CSS</h3>
+                        <i class="devicon-tailwindcss-plain colored skills-check"></i>
+                    </div>
+                </div>
+
+                <div class="skills_data">
+                    <div class="skills_titles">
+                        <h3 class="skills_name">Firebase</h3>
+                        <i class="devicon-firebase-plain-wordmark colored skills-check"></i>
+                    </div>
+                </div>
+
+                <div class="skills_data">
+                    <div class="skills_titles">
+                        <h3 class="skills_name">Redux</h3>
+                        <i class="devicon-redux-original colored skills-check"></i>
+                    </div>
+                </div>
+
+                <div class="skills_data">
+                    <div class="skills_titles">
+                        <h3 class="skills_name">SASS</h3>
+                        <i class="devicon-sass-original colored skills-check"></i>
+                    </div>
+                </div>
+
+                <div class="skills_data">
+                    <div class="skills_titles">
+                        <h3 class="skills_name">Next JS</h3>
+                        <i class="devicon-nextjs-line  skills-check"></i>
+                    </div>
+                </div>
+
+                <div class="skills_data">
+                    <div class="skills_titles">
+                        <h3 class="skills_name">GIT Version Control</h3>
+                        <i class="devicon-git-plain colored skills-check"></i>
+                    </div>
+                </div>
+
+                <div class="skills_data">
+                    <div class="skills_titles">
+                        <h3 class="skills_name">Git Hub</h3>
+                        <i class="devicon-github-original-wordmark skills-check"></i>
+                    </div>
+                </div>
+
+            </div>
+            </section>
+            <div class="space1"></div><div class="space1"></div>
+            <div class="about">
+                <div class="row">
+                    
+                    <div class="col1">
+                        <div class="space1"></div>
+                        <h1><strong>About me</strong></h1>
+                        <p>Hi I'm Michael Arrah,<br>
+                            WEB DESIGN student <br>
+                            I am a web designer and developer from Nigeria <br>
+                            I am a frontend developer <br>
+                        I can create or design any kind of webpage no matter how big it is, <br>
+                         and how time consuming it will be<br>
+                         I can design it through the use of<br>
+                         HTML,CSS AND Javascript.<br>
+                         I'm a trustworthy developer no matter how hard<br>
+                         the task is i am available.
+                        
+                        </p>
+                    </div>
+                        <div class="col2">
+                            <!-- <img src="asset/media/image/mic1.jfi" alt=""> -->
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+</div>
+    </div>
+
+    <footer>
+        <div class="row" id="about">
+            <div class="col1">
+                <div class="space"></div>
+                <div class="space"></div>
+                <h1>Michael <span>Arrah</span></h1>
+                <h3>Frontend Engineer</h3>
+            </div>
+            <div class="col2">
+                
+                <!-- <a href="#portfolio">portfolio</a>
+                <a href="#about">about</a>
+                <a href="#alone">skills</a> -->
+                <div class="space"></div>
+                <div class="space"></div>
+                <h2>Contact <span>me</span></h2>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-telegram"></i>
+                <i class="fa-brands fa-whatsapp" title="visit my Whatsapp"></i>
+                <p><i class="fa-solid fa-phone"></i> +2349047596908</p>
+                
+            </div>
+
+        </div>
+        
+                <div class="space"></div>
+                <div class="space"></div>
+        <section>
+            
+            <main>
+                <input type="text" placeholder="Your Name"><br><br>
+            <input type="email" placeholder="Your Email"><br><br>
+            <textarea name="" id="" cols="22" rows="10" placeholder="Your Message"></textarea><br><br>
+            <button>submit</button>
+            </main>
+            <main></main>
+        </section>
+        <div class="space"></div>
+        <div class="space"></div>
+        <h4>Copyright © 2023 <span>Michael.</span></h4>
+    </footer>
+    
+</body>
+</html>
+<script>
+    //slider
+    let i = 0;
+    let images = [];
+    let time = 3000; // changes every 3 seconds
+
+
+    //images list
+    images[0] = "asset/media/image/mic.jfif";
+    images[1] = "asset/media/image/mic1.jfif";
+    images[2] = "asset/media/image/mic2.jfif";
+    images[3] = "asset/media/image/mic3.jfif";
+
+    //change image
+    function changeImg(){
+        document.Slide.src = images[i];
+        if(i < images.length -1){
+            i++;
+        } else {
+            i = 0;
+        }
+        setTimeout("changeImg()", time)
+    }
+    window.onload = changeImg;
+
+</script>
